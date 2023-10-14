@@ -16,6 +16,9 @@
 		3E3F0C5F2AD86BE400F73C05 /* turingTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3F0C5E2AD86BE400F73C05 /* turingTestTests.swift */; };
 		3E3F0C692AD86BE400F73C05 /* turingTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3F0C682AD86BE400F73C05 /* turingTestUITests.swift */; };
 		3E3F0C6B2AD86BE400F73C05 /* turingTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3F0C6A2AD86BE400F73C05 /* turingTestUITestsLaunchTests.swift */; };
+		3E3F0C7D2AD86D7400F73C05 /* TrackWithLiveTracksDto.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3F0C7C2AD86D7400F73C05 /* TrackWithLiveTracksDto.m */; };
+		3E882A712AD8905400A93B3B /* CollectionOfLiveTrackDto.h in Sources */ = {isa = PBXBuildFile; fileRef = 3E3F0C7F2AD8868C00F73C05 /* CollectionOfLiveTrackDto.h */; };
+		3E882A732AD8915E00A93B3B /* CollectionOfLiveTrackDto.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E882A722AD8915E00A93B3B /* CollectionOfLiveTrackDto.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,12 @@
 		3E3F0C642AD86BE400F73C05 /* turingTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = turingTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E3F0C682AD86BE400F73C05 /* turingTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = turingTestUITests.swift; sourceTree = "<group>"; };
 		3E3F0C6A2AD86BE400F73C05 /* turingTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = turingTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3E3F0C7B2AD86D7300F73C05 /* turingTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "turingTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		3E3F0C7C2AD86D7400F73C05 /* TrackWithLiveTracksDto.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrackWithLiveTracksDto.m; sourceTree = "<group>"; };
+		3E3F0C7E2AD86DD600F73C05 /* TrackWithLiveTracksDto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrackWithLiveTracksDto.h; sourceTree = "<group>"; };
+		3E3F0C7F2AD8868C00F73C05 /* CollectionOfLiveTrackDto.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; path = CollectionOfLiveTrackDto.h; sourceTree = "<group>"; };
+		3E882A6F2AD88D7100A93B3B /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		3E882A722AD8915E00A93B3B /* CollectionOfLiveTrackDto.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionOfLiveTrackDto.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +115,12 @@
 				3E3F0C502AD86BE400F73C05 /* Assets.xcassets */,
 				3E3F0C522AD86BE400F73C05 /* LaunchScreen.storyboard */,
 				3E3F0C552AD86BE400F73C05 /* Info.plist */,
+				3E3F0C7C2AD86D7400F73C05 /* TrackWithLiveTracksDto.m */,
+				3E3F0C7B2AD86D7300F73C05 /* turingTest-Bridging-Header.h */,
+				3E3F0C7E2AD86DD600F73C05 /* TrackWithLiveTracksDto.h */,
+				3E3F0C7F2AD8868C00F73C05 /* CollectionOfLiveTrackDto.h */,
+				3E882A6F2AD88D7100A93B3B /* Header.h */,
+				3E882A722AD8915E00A93B3B /* CollectionOfLiveTrackDto.m */,
 			);
 			path = turingTest;
 			sourceTree = "<group>";
@@ -195,6 +210,7 @@
 				TargetAttributes = {
 					3E3F0C432AD86BE200F73C05 = {
 						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
 					};
 					3E3F0C592AD86BE400F73C05 = {
 						CreatedOnToolsVersion = 15.0;
@@ -258,9 +274,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E882A712AD8905400A93B3B /* CollectionOfLiveTrackDto.h in Sources */,
 				3E3F0C4C2AD86BE200F73C05 /* ViewController.swift in Sources */,
 				3E3F0C482AD86BE200F73C05 /* AppDelegate.swift in Sources */,
 				3E3F0C4A2AD86BE200F73C05 /* SceneDelegate.swift in Sources */,
+				3E882A732AD8915E00A93B3B /* CollectionOfLiveTrackDto.m in Sources */,
+				3E3F0C7D2AD86D7400F73C05 /* TrackWithLiveTracksDto.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,16 +459,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CRY9FT234Q;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = turingTest/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = turingIOS;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,6 +481,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.turing.assessment.turingTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "turingTest/turingTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -468,16 +493,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CRY9FT234Q;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = turingTest/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = turingIOS;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -486,6 +515,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.turing.assessment.turingTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "turingTest/turingTest-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
